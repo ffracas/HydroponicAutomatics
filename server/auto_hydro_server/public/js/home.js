@@ -7,6 +7,7 @@ const Home = {
         <headerbar></headerbar>
         <main>
             <div>home blallo</div>
+            <system-panel></system-panel>
         </main>
         <footerbar></footerbar>
     <div>
