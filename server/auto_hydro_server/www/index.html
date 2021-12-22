@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Hydroponic System</title>
+
+		<!-- Favicon --> 
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet'> 
+	</head>
+	<body>
+		<div id="link">
+			<router-view :key="$route.path"></router-view>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>	
+		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+		<script src="https://unpkg.com/vue-cookies@1.5.12/vue-cookies.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+		<script src="/static/components/headerbar.js"></script>
+		<script src="/static/components/footerbar.js"></script>
+		<script src="/static/js/404.js"></script>
+		<script src="/static/js/home.js"></script>
+		<script src="/static/js/router.js"></script>
+
+		<script>
+			Vue.config.productionTip = false;
+			Vue.config.silent = true;
+			Vue.config.warnHandler = function (err, vm, info) {
+			};
+
+			var app = new Vue({
+				router,
+				el:'#link',
+			})
+		</script>
+	</body>
+</html>

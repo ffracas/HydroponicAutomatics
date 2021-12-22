@@ -1,0 +1,5 @@
+const NotFound = {
+    template: `
+    addio
+    `
+  }
