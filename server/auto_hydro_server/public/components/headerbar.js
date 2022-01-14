@@ -9,10 +9,16 @@ Vue.component('headerbar', {
             LOGO
           </div>
           <div class="header-links">
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
+            <router-link to="/">
+              <div class="headerTitle">
+                Home
+              </div>
+            </router-link>
+            <router-link to="/baba">
+              <div class="headerTitle">
+                404
+              </div>
+            </router-link>
           </div>
         </div> 
       </header>

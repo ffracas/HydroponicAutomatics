@@ -6,8 +6,9 @@ const Home = {
     <div>
         <headerbar></headerbar>
         <main>
-            <system-panel></system-panel>
-            <tabledata></tabledata>
+            <!-- <system-panel></system-panel>
+            <tabledata></tabledata> -->
+            <plantsdata></plantsdata>
         </main>
         <footerbar></footerbar>
     <div>
